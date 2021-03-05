@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'j=oc&j6z6wm^p3es*htx&*(d7*t&$lz@3(5qx5j73yr@-!-bgg'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run witgit h debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -119,6 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 ALLOWED_HOSTS = [
     ".ap-northeast-2.compute.amazonaws.com"
