@@ -1,10 +1,90 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>First_Release</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Django 첫 배포!!!!!</h1>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First_Release</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HAHAHA</title>
+    <style>
+        .items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: palegreen;
+            width: 100%;
+            height: 600px;
+            margin-top: 30px;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        nav .links {
+            width: 150px;
+            height: 50px;
+            background-color: peru;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    <h1>Django 첫 배포!!!!!</h1>
+    <nav>
+        <div class="links" id="link1">Beauty</div>
+        <div class="links" id="link2">Style</div>
+        <div class="links" id="link3">Filter</div>
+        <div class="links" id="link4">Makeup</div>
+    </nav>
+
+    <div class="items" id="item1"> Beauty</div>
+    <div class="items" id="item2"> Style</div>
+    <div class="items" id="item3"> Filter</div>
+    <div class="items" id="item4"> Makeup</div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('#link2').on('click', function() {
+            $('html').animate({
+                scrollTop: $("#item2").offset().top,
+            }, 800);
+        })
+    </script>
+
+    <script>
+        $('#link3').on('click', function() {
+            $('html').animate({
+                scrollTop: $("#item3").offset().top,
+            }, 800);
+        })
+    </script>
+
+    <script>
+        $('#link4').on('click', function() {
+            $('html').animate({
+                scrollTop: $("#item4").offset().top,
+            }, 800);
+        })
+    </script>
 </body>
 </html>
