@@ -51,12 +51,14 @@
         <div class="links" id="link2">Style</div>
         <div class="links" id="link3">Filter</div>
         <div class="links" id="link4">Makeup</div>
+        <div class="links" id="link5">Studio</div>
     </nav>
 
-    <div class="items" id="item1"> Beauty</div>
-    <div class="items" id="item2"> Style</div>
-    <div class="items" id="item3"> Filter</div>
-    <div class="items" id="item4"> Makeup</div>
+    <div class="items" id="item1"> Beauty Scheme</div>
+    <div class="items" id="item2"> Style Scheme</div>
+    <div class="items" id="item3"> Filter Scheme</div>
+    <div class="items" id="item4"> Makeup Scheme</div>
+    <div class="items" id="item5"> Studio Scheme</div>
 
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -83,6 +85,14 @@
         $('#link4').on('click', function() {
             $('html').animate({
                 scrollTop: $("#item4").offset().top,
+            }, 800);
+        })
+    </script>
+
+    <script>
+        $('#link5').on('click', function() {
+            $('html').animate({
+                scrollTop: $("#item5").offset().top,
             }, 800);
         })
     </script>
