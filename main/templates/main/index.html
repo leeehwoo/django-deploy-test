@@ -60,6 +60,7 @@
     <div class="items" id="item3"> Filter Scheme</div>
     <div class="items" id="item4"> Makeup Scheme</div>
     <div class="items" id="item5"> Studio Scheme</div>
+    <input type = "button" value="url" name="test" onclick="location.href='soda://go?styleId=101300'">
 
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -96,6 +97,12 @@
                 scrollTop: $("#item5").offset().top,
             }, 800);
         })
+    </script>
+
+    <script>
+        $('#item1).on('click', function() {
+            location.herf="www.naver.com"
+        }
     </script>
 </body>
 </html>
