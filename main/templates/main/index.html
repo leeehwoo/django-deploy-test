@@ -98,18 +98,40 @@
     </select>
     <input type="text" placeholder="Insert Strength (0~100)">
     <button type="button"> +</button>
+    <button type="button" onclick="window.open('soda://go?beautyKeyname=enlarge')"> GO</button>
     <div class="items" id="item1" onclick="window.open('soda://go?beautyKeyname=enlarge')"> Beauty Scheme</div>
     <br>
     <input type="text" placeholder="Insert Style ID">
+    <input type="radio" name="check_style_dl" value="Auto DL ON"> Auto DL ON
+    <input type="radio" name="check_style_dl" value="Auto DL OFF"> Auto DL OFF
+    <button type="button" onclick="window.open('soda://go?styleId=101255&autoDownload=true')"> GO</button>
     <div class="items" id="item2" onclick="window.open('soda://go?styleId=101255&autoDownload=true')"> Style Scheme</div>
     <br>
     <input type="text" placeholder="Insert Filter ID">
+    <input type="radio" name="check_filter_dl" value="Auto DL ON"> Auto DL ON
+    <input type="radio" name="check_filter_dl" value="Auto DL OFF"> Auto DL OFF
+    <button type="button" onclick="window.open('soda://go?filterId=300245')"> GO</button>
     <div class="items" id="item3" onclick="window.open('soda://go?filterId=300245')"> Filter Scheme</div>
     <br>
-    <input type="text" placeholder="Insert Makeup Keyname & ID">
+    <select>
+        <optgroup label="Select Keyname"></optgroup>
+        <option value="contour">Contour</option>
+        <option value="blush">Blush</option>
+        <option value="lip_color">Lip Color</option>
+        <option value="eye_color">Eye Color</option>
+        <option value="eyebrows">Eyebrows</option>
+        <option value="eye_shadow">Eye Shadow</option>
+        <option value="eye_liner">Eye Liner</option>
+        <option value="eyelashes">Eyelashes</option>
+    </select>
+    <input type="text" placeholder="Insert ID">
+    <input type="text" placeholder="Insert Strength (0~100)">
+    <button type="button"> +</button>
+    <button type="button" onclick="window.open('soda://go?makeup=lip_color(0101,80)&blush(0103,20)&contour(0102,50)&eye_color(0108,100)')"> GO</button>
     <div class="items" id="item4" onclick="window.open('soda://go?makeup=lip_color(0101,80)&blush(0103,20)&contour(0102,50)&eye_color(0108,100)')"> Makeup Scheme</div>
     <br>
     <input type="text" placeholder="Insert Studio Template ID">
+    <button type="button" onclick="window.open('soda://studio?templateId=10760')"> GO</button>
     <div class="items" id="item5" onclick="window.open('soda://studio?templateId=10760')"> Studio Scheme</div>
 <!--    <input type = "button" value="url" name="test" onclick="location.href='soda://go?styleId=101255&autoDownload=true'">-->
 <!--    <input type="button" value="album" name="test" onclick="window.open('soda://go?styleId=101255&autoDownload=true')">-->
